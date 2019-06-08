@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+<listeners>
+	<listener class-name="qa.Listners.Listner"></listener>
+	</listeners>
+	
+	<test name="search for Flights" preserve-order="true">
+		<classes>
+			<class name="qa.TestCases.TestSetup"></class>
+			<class name="qa.TestCases.SearchFlightTest"></class>
+		</classes>
+	</test>
+   <test name="Count Flight with different Filters" preserve-order="true">
+		<classes>
+			<class name="qa.TestCases.FlightCounts"></class>
+		</classes>
+	</test>
+	
+	<test name="Validate Flight Prices" preserve-order="true">
+		<classes>
+			<class name="qa.TestCases.FlightPrices"></class>
+		</classes>
+	</test>
+</suite>

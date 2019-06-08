@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="qa.Listners.Listner"/>
+  </listeners>
+  <test thread-count="5" name="search for Flights(failed)">
+    <classes>
+      <class name="qa.TestCases.SearchFlightTest">
+        <methods>
+          <include name="searchFlights"/>
+        </methods>
+      </class> <!-- qa.TestCases.SearchFlightTest -->
+    </classes>
+  </test> <!-- search for Flights(failed) -->
+  <test thread-count="5" name="Count Flight with different Filters(failed)">
+    <classes>
+      <class name="qa.TestCases.FlightCounts">
+        <methods>
+          <include name="NoFilterFlightCounts"/>
+          <include name="NoStopsFlightCount"/>
+          <include name="OnStopFlightCount"/>
+        </methods>
+      </class> <!-- qa.TestCases.FlightCounts -->
+    </classes>
+  </test> <!-- Count Flight with different Filters(failed) -->
+  <test thread-count="5" name="Validate Flight Prices(failed)">
+    <classes>
+      <class name="qa.TestCases.FlightPrices">
+        <methods>
+          <include name="FlightPrice"/>
+        </methods>
+      </class> <!-- qa.TestCases.FlightPrices -->
+    </classes>
+  </test> <!-- Validate Flight Prices(failed) -->
+</suite> <!-- Failed suite [Suite] -->
